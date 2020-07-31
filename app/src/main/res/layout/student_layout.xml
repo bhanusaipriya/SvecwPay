@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="50dp"
+    android:background="#ffffff">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_single_image"
+        android:layout_width="122dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_account_circle_black_24dp" />
+
+    <TextView
+        android:id="@+id/user_single_name"
+        android:layout_width="245dp"
+        android:layout_height="34dp"
+        android:layout_alignStart="@+id/user_single_image"
+        android:layout_alignLeft="@+id/user_single_image"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="casual"
+        android:text="Display id"
+        android:textColor="@color/red"
+        android:textSize="28sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/amount"
+        android:layout_alignRight="@+id/amount"
+        android:layout_alignBottom="@+id/user_single_image"
+        android:layout_marginEnd="139dp"
+        android:layout_marginRight="139dp"
+        android:layout_marginBottom="6dp"
+        app:srcCompat="@drawable/rupee" />
+
+    <ImageButton
+        android:id="@+id/addmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="40dp"
+        android:background="#ffffff"
+        android:src="@drawable/ic_add_circle_black_24dp" />
+
+</RelativeLayout>
